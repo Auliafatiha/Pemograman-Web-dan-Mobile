@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "menukanan header header menukiri"
+                "menukanan konten konten menukiri"
+                "footer footer footer footer";
+            grid-template-rows: 70px 1fr auto; /* Baris 1: 70px, Baris 2: 1fr, Baris 3: auto */
+            grid-template-columns: 100px 1fr 1fr 350px; /* Kolom 1: 100px, Kolom 2 dan 3: 1fr, Kolom 4: 200px */
+            
+            height: 100vh;
+            background-color: rgb(255, 252, 252);
+            padding: 5px;
+        }
+
+        .grid-container > * {
+            background-color: black;
+            font-family: sans-serif;
+            font-size: 20px;
+            
+        }
+
+        header {
+            padding: 10px;
+            grid-area: header;
+            position: relative;
+        }
+
+        .menukanan {
+            
+            grid-area: menukanan;
+            position: relative;
+        }
+
+        .menukiri {
+            padding: 10px;
+            grid-area: menukiri;
+            position: relative;
+            overflow-y: auto; /* Tambahkan scroll jika konten terlalu panjang */
+        }
+
+        main {
+            position: relative;
+            grid-area: konten;
+            overflow-y: auto; /* Tambahkan scroll jika konten terlalu panjang */
+            font-family: sans-serif;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+         
+           
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        h3 {
+            position: absolute;
+            color: white;
+            font-family: sans-serif;
+            top: -10px;
+            left: 100px;
+        }
+
+        h5 {
+            position: absolute;
+            color: #696969;
+            font-family: sans-serif;
+            left: 100px;
+            top: 20px;
+            font-size: medium;
+            font-style: normal;
+        }
+
+        .ikonatas {
+            position: absolute;
+            left: 20px;
+            top: 25px;
+        }
+
+        .ikonkiri {
+            position: relative;
+            padding-top: 25px;
+            left: 20px;
+        }
+
+        .home ul {
+            list-style-type: none;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+        }
+
+        .home img {
+            width: 30px;
+            height: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h3>Asterik Sky</h3>
+            <h5>1 posts</h5>
+            <div class="ikonatas">
+                <img src="image/back.png" alt="back">
+            </div>
+        </header>
+        <aside class="menukanan">
+            <div class="ikonkiri">
+                <img src="image/twitter.png" alt="Twitter Icon">
+            </div>
+            <div class="home">
+                <ul>
+                    <li><img src="image/home.png" alt="Home"></li>
+                    <li><img src="image/magnifying-glass.png" alt="Search"></li>
+                    <li><img src="image/bell.png" alt="Notification"></li>
+                    <li><img src="image/email.png" alt="Chat"></li>
+                    <li><img src="image/user.png" alt="Profile"></li>
+                    <li><img src="image/more-information.png" alt="More"></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="sampul"> </div>
+            <div class="profil">A</div>
+           <div class="tentangprofil">
+            <p class="akun">Asterik Sky</p>
+            <p class="namaprofil">@AsterikSky81967<p>
+            <div class="tanggal">
+                <p>Joined December 2024</p>
+                <img src="image/calendar(1).png" alt="kalender">
+            </div>
+           <div class="mengikuti">
+            <p class="Following"><span class="putih">14</span><span class="abuabu"> Following</span></p></div>
+            <div class="pengikut">
+               <p class="follower"><span class="white">0</span><span class="grey"> Followers</span></p>
+            </div>
+        <button class="btn">Edit Profile</button>
+        <div class="button1">
+            <ul class="tombol">
+                <li><button class="whites">Posts</button></li>
+                <li><button class="btnn">Replies</button></li>
+                <li><button class="btnn">Highlights</button></li>
+                <li><button class="btnn">Articles</button></li>
+                <li><button class="btnn">Media</button></li>
+                <li><button class="btnn">Likes</button></li>
+            
+            </ul>
+        </div>
+        <hr class="garis">
+        <hr class="garisbiru">
+
+        <div class="postingan">A</div>
+        <div class="post"><p class="pemosting"><b class="sp">Asterik Sky </b> @AsterikSky81967  4m</p></div>
+        <p class="caption">Aku akan tetap menikmati libur......</p>
+        <div class="feed"><img src="image/meme2.jpg" alt="">meme</div>
+        <div class="react">
+            <ul class="reaksi">
+                <li><img src="image/chat (1).png" ></li>
+                <li><img src="image/retweet (1).png" ></li>
+                <li><img src="image/heart (1).png" ></li>
+                <li><img src="image/bar-chart.png" ></li>
+                <li><img src="image/save-instagram.png" ></li>
+            </ul>
+           
+        </div>
+        <img src ="image/export.png" class="share">
+        <hr class="garisbawah">
+           </div>
+        </main>
+        <aside class="menukiri">
+            <div class="search">
+                <img src="image/magnifying-glass.png" alt="Search Icon">
+                <input class="pencarian" type="text" placeholder="Cari">
+            </div>
+            <!-- Konten samping di sini -->
+             <div class="kotakrekom">
+                <p class="teks">You might like</p>
+                <div class="profil1">
+                    <ul class="people">
+                        <li><img src="image/meme2.jpg" ></li>
+                        <li><img src="image/meme2.jpg" ></li>
+                        <li><img src="image/meme2.jpg" ></li>
+                    </ul>
+                </div>
+                <div class="profil2">
+                    <ul class="usn">
+                        <li><p>Meme.Kocak</p></li>
+                        <li><p>LUCUITUGRATIS</p></li>
+                        <li><p>Meme INDONESIA</p></li>
+                    </ul>
+                  
+                </div>
+                <div class="profil3">
+                    <ul class="id">
+                        <li><p>@memekocak2025</p></li>
+                        <li><p>@Lucugeratis1</p></li>
+                        <li><p>@Rajamemeindo</p></li>
+
+                    </ul>
+                </div>
+                <div class="profil4">
+                    <ul class="btn">
+                        <li><button>Follow</button></li>
+                        <li><button>Follow</button></li>
+                        <li><button>Follow</button></li>
+
+                    </ul>
+                </div>
+                <button class="show">Show more</button>
+             </div>
+             <div class="kotaktrend">
+                <p class="teks">What's Happening</p>
+                <div class="hastag">
+                    <ul>
+                        <li><p>Trend in Indonesia <br>
+                        <b><span style="color: white;">#VanessaZea</span></b><br>
+                        1,113 post</p></li>
+                        <li><p>Trend in Indonesia <br>
+                        <b > <span style="color: white;">Muhammadiyah</span></b><br>
+                        8,140 post</p></li>
+                        <li><p>Trend in Indonesia <br><b> <span style="color: white;">#BuruhBersamaPrabowo</span></b> <br>2,383 post</p></li>
+
+                    </ul>
+                </div>
+                <div class="ikonmore"><ul>
+                    <li><img src="image/more(2).png" alt=""></li>
+                    <li><img src="image/more(2).png" alt=""></li>
+                    <li><img src="image/more(2).png" alt=""></li>
+                </ul></div>
+                <button class="more2">Show more</button>
+
+             </div>
+        </aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
