@@ -1,451 +1,446 @@
-:root {
-   --primary-color: #1DA1F2;
-   --secondary-color: #696969;
-   --background-color: black;
-   --text-color: white;
-   --text-color-secondary: gray;
-   --text-color-third: pink;
-   --border-radius: 20px;
-   --font-family: sans-serif;
- }
- 
- html, body {
-   height: 100%;
-   overflow: auto;
- }
- 
- .search {
-   position: relative;
- }
- 
- .search .pencarian {
-   width: 80%;
-   background-color: var(--background-color);
-   border: 1px solid var(--secondary-color);
-   border-radius: var(--border-radius);
-   padding: 10px 10px 10px 40px;
+.html,body{
+  height: 100%;
+  overflow: auto;
+}
+
+/* .home li{
+display: flex;
+gap: 20px;
+
+  
+}
+.home img{
+   width: 24px;
+   height: 24px;
+} */
+.search{
+position: relative;
+}
+.pencarian{
+  
+  width: 80%;
+   background-color: black;
+   border: 1px solid;
+   border-color: #696969;
+   border-radius: 20px;
+   padding-left :40px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px; 
    outline: none;
-   color: var(--text-color);
- }
- 
- .search img {
+   color: white;
+}
+.search img{
    position: absolute;
    width: 20px;
    height: 20px;
    left: 10px;
    top: 50%;
    transform: translateY(-50%);
-   color: var(--text-color-secondary);
- }
+   color: #888;
+}
+.sampul{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #696969;
+  
+}
+.profil{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: #3a6669;
+  top: 60px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-family: sans-serif;
+  color: white;
+}
+/* .tentangprofil{
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background-color: rgb(82, 28, 28);
+} */
+.akun{
+  position: relative;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 25px;
+  top: 65px;
+}
+.namaprofil{
+  position: relative;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: gray;
+  margin-left: 23px;
+  top: 45px; 
+}
+.tanggal img{
+  position: relative;
+  top: 10px;
+  left: 25px;
+  width: 14px;
+  height: 14px;
+}
+.tanggal p{
+  position: relative;
+  top: 45px;
+  margin-left: 44px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: gray;
+
+} 
+.mengikuti{
+  font-size: 13px;
+  margin-left: 24px;
+  top: 18px;
+
+}
+.putih{
+  color: white;
+  font-weight: bold;
+}
+.abuabu{
+  color: gray;
+}
+.pengikut{
+  position: relative;
+  font-size: 13px;
+  margin-left: 130px;
+  bottom: 28px;
+}
+.white{
+  color: white;
+  font-weight: bold;
+}
+.grey{
+  color: gray;
+}
+.edit{
+  border-radius: 6px;
+}
+
+
+.btn{
+  background: black;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  top: 120px;
+  left: 85%;
+  padding: 5px;
+  border: white;
+  border-radius: 15px;
+  border: 6px;
+  color: white;
+
+}
+
+.button1{
+  
+  position: absolute;
+  right: 20px;
+  top: 60%
+
+}
+.tombol{
  
- .sampul {
-   position: relative;
-   width: 100%;
-   height: 20%;
-   background-color: var(--secondary-color);
- }
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  column-gap: 30px;
+  
+
+}
+.button1 .btnn{
+  background: none;
+  border: none;
+  color: grey;
+  width: 100px;
+  height: 25px;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 17px;
+
+}
+.button1 .whites{
+  background: none;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 25px;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 17px;
+}
+.garis{
+  position: absolute;
+  top: 70%;
+  height: 0.5rch;
+  background-color: grey;
+  width: 100%;
+
+}
+.garisbiru{
+  position: absolute;
+  left: 19px;
+  top: 69%;
+  height: 5px;
+  background-color: #1DA1F2;
+  width: 7%;
+  border-radius: 2px;
+}
+.postingan{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #3a6669;
+  top: 75%;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  
+}
+.post{
+  position: absolute;
+  top: 74%;
+  left: 80px;
+  font-size: 15px
+   
+}
+.pemosting{
+  color: gray;
  
- .profil {
-   position: absolute;
-   width: 100px;
-   height: 100px;
-   border: 5px solid var(--background-color);
-   border-radius: 50%;
-   background-color: #3a6669;
-   top: 60px;
-   margin-left: 20px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 60px;
-   font-family: var(--font-family);
-   color: var(--text-color);
- }
+}
+.pemosting .sp{
+  color: white;
+    
+}
+.caption{
+  position: absolute;
+  top: 80%;
+  left: 80px;
+  font-size: 15px;
+  color: white;
+}
+.feed{
+  position: absolute;
+  top: 90%;
+  left: 80px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.feed img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.react{
+  position: absolute;
+  top: 150%;
+  left: 45px;
+
+}
+.react .reaksi{
+  display: flex;
+  list-style-type: null;
+  flex-direction: row;
+  column-gap: 120px;
+
+
+}
+.react img{
+width: 20px;
+height: 20px;
+}
+.share{
+  position: absolute;
+  top: 154%;
+  right: 63px;
+}
+.garisbawah{
+  position: absolute;
+  top: 158%;
+  height: 0.5px;
+  width: 100%;
+  color: gray;
+}
+.kotakrekom{
+  position: absolute;
+  left: 10px;
+  top: 12%;
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid gray;
+  
+}
+.teks{
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+
+}
+.profil1{
+  position: absolute;
+  top: 50px;
+  right:250px;
+  
+}
+.profil1 .people{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: none;
+}
+.profil1 img{
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.profil2{
+  position: absolute;
+  top: 32px;
+  right: 110px;
+}
+.profil2 .usn{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.profil2 p{
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.profil3 {
+  position: absolute;
+  top: 53px;
+  left: 15px;
+}
+.profil3 .id{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 34px;
+}
+.profil3 p{
+  font-size: 14px;
+  font-weight: normal;
+  color: grey;
+}
+.profil4{
+  position: absolute;
+  bottom: 120%;
+  left: 200px;
+}
+.profil4 .btn{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 46px;
+}
+.profil4 button{
+  height: 30px;
+  width: 70px;
+  border-radius: 15px;
+  background-color: white;
+  font-weight: bold;
+  
+}
+.show{
+  position: absolute;
+  background-color: black;
+  color: #1DA1F2;
+  border: none;
+  top: 90%;
+  font-size: 16px;
+  left: 10px;
+}
+.kotaktrend{
+  position: absolute;
+  top: 80%;
+  width: 90%;
+  height: 65%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: black;
+}
+.kotaktrend .teks{
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  
+
+}
+.hastag{
+  position: absolute;
+  top: 40px ;
  
- .akun, .namaprofil, .tanggal p, .mengikuti, .pengikut, .caption, .post, .teks, .profil2 p, .hastag p {
-   font-family: var(--font-family);
-   color: var(--text-color);
- }
- 
- .akun {
-   font-size: 20px;
-   font-weight: bold;
-   margin-left: 25px;
-   top: 65px;
- }
- 
- .namaprofil {
-   font-size: 15px;
-   color: var(--text-color-secondary);
-   margin-left: 23px;
-   top: 45px;
- }
- 
- .tanggal img {
-   top: 10px;
-   left: 25px;
-   width: 14px;
-   height: 14px;
- }
- 
- .tanggal p {
-   top: 45px;
-   margin-left: 44px;
-   font-size: 15px;
-   color: var(--text-color-secondary);
- }
- 
- .mengikuti, .pengikut {
-   font-size: 13px;
-   margin-left: 24px;
-   top: 18px;
- }
- 
- .putih, .white {
-   color: var(--text-color);
-   font-weight: bold;
- }
- 
- .abuabu, .grey {
-   color: var(--text-color-secondary);
- }
- 
- .btn {
-   background: var(--background-color);
-   width: 100px;
-   height: 25px;
-   position: absolute;
-   top: 120px;
-   left: 85%;
-   padding: 5px;
-   border: 1px solid var(--text-color);
-   border-radius: 15px;
-   color: var(--text-color);
- }
- 
- .button1 {
-   position: absolute;
-   right: 20px;
-   top: 60%;
- }
- 
- .tombol {
-   display: flex;
-   list-style-type: none;
-   gap: 30px;
- }
- 
- .button1 .btnn, .button1 .whites {
-   background: none;
-   border: none;
-   width: 100px;
-   height: 25px;
-   padding: 5px;
-   font-size: 17px;
- }
- 
- .button1 .btnn {
-   color: var(--text-color-secondary);
- }
- 
- .button1 .whites {
-   color: var(--text-color);
- }
- 
- .garis, .garisbiru, .line, .garisbawah {
-   position: absolute;
-   height: 0.5px;
-   background-color: var(--secondary-color);
-   width: 100%;
- }
- 
- .garisbiru {
-   left: 19px;
-   top: 69%;
-   height: 5px;
-   background-color: var(--primary-color);
-   width: 7%;
-   border-radius: 2px;
- }
- 
- .makepost {
-   position: relative;
-   top: 35px;
-   left: 5px;
- }
- 
- .foto, .postingan {
-   position: absolute;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   background-color: #3a6669;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 30px;
-   color: var(--text-color);
- }
- 
- .foto {
-   top: 45%;
-   left: 15px;
-   transform: translateY(-50%);
- }
- 
- .status {
-   width: 88%;
-   height: 70px;
-   background-color: var(--background-color);
-   border: none;
-   padding: 5px 5px 5px 80px;
-   color: var(--text-color);
-   font-size: 20px;
-   outline: none;
- }
- 
- .aksi {
-   position: absolute;
-   bottom: 5px;
- }
- 
- .aksi ul {
-   display: flex;
-   list-style-type: none;
-   gap: 20px;
- }
- 
- .aksi img {
-   width: 20px;
-   height: 20px;
- }
- 
- .btnpost {
-   position: absolute;
-   width: 80px;
-   height: 40px;
-   top: 80%;
-   left: 85%;
-   background-color: var(--secondary-color);
-   color: var(--background-color);
-   font-size: 16px;
-   padding: 5px;
-   border-radius: var(--border-radius);
-   font-weight: bold;
-   border: none;
- }
- 
- .postingan {
-   top: 100%;
-   left: 15px;
- }
- 
- .post {
-   position: absolute;
-   top: 99%;
-   left: 80px;
-   font-size: 15px;
- }
- 
- .pemosting {
-   color: var(--text-color-secondary);
- }
- 
- .pemosting .sp {
-   color: var(--text-color);
- }
- 
- .caption {
-   position: absolute;
-   top: 105%;
-   left: 80px;
-   font-size: 15px;
- }
- 
- .feed {
-   position: absolute;
-   top: 115%;
-   left: 80px;
-   width: 300px;
-   height: 300px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- 
- .feed img {
-   width: 100%;
-   height: 100%;
-   border-radius: 10px;
-   object-fit: cover;
- }
- 
- .react {
-   position: absolute;
-   top: 180%;
-   left: 45px;
- }
- 
- .react .reaksi {
-   display: flex;
-   list-style-type: none;
-   gap: 120px;
- }
- 
- .react img {
-   width: 20px;
-   height: 20px;
- }
- 
- .share {
-   position: absolute;
-   top: 184%;
-   right: 63px;
- }
- 
- .kotakrekom, .kotaktrend {
-   position: absolute;
-   width: 90%;
-   border-radius: 10px;
-   background-color: var(--background-color);
-   border: 1px solid var(--secondary-color);
- }
- 
- .kotakrekom {
-   top: 12%;
-   height: 60%;
- }
- 
- .kotaktrend {
-   top: 80%;
-   height: 65%;
- }
- 
- .teks {
-   position: absolute;
-   top: 2px;
-   left: 10px;
-   font-size: 20px;
-   font-weight: bold;
- }
- 
- .profil1, .profil2, .profil3, .profil4 {
-   position: absolute;
- }
- 
- .profil1 {
-   top: 50px;
-   right: 250px;
- }
- 
- .profil1 .people {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 30px;
- }
- 
- .profil1 img {
-   width: 40px;
-   height: 40px;
-   border-radius: 25px;
- }
- 
- .profil2 {
-   top: 32px;
-   right: 110px;
- }
- 
- .profil2 .usn {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 30px;
- }
- 
- .profil2 p {
-   font-size: 15px;
-   font-weight: bold;
- }
- 
- .profil3 {
-   top: 53px;
-   left: 15px;
- }
- 
- .profil3 .id {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 34px;
- }
- 
- .profil3 p {
-   font-size: 14px;
-   color: var(--text-color-secondary);
- }
- 
- .profil4 {
-   bottom: 120%;
-   left: 200px;
- }
- 
- .profil4 .btn {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 46px;
- }
- 
- .profil4 button {
-   height: 30px;
-   width: 70px;
-   border-radius: 15px;
-   background-color: var(--text-color);
-   font-weight: bold;
- }
- 
- .show, .more2 {
-   position: absolute;
-   background-color: var(--background-color);
-   color: var(--primary-color);
-   border: none;
-   top: 90%;
-   font-size: 16px;
-   left: 10px;
- }
- 
- .hastag {
-   position: absolute;
-   top: 40px;
- }
- 
- .hastag ul {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 20px;
- }
- 
- .hastag p {
-   font-size: 14px;
-   color: var(--text-color-secondary);
- }
- 
- .ikonmore {
-   position: absolute;
-   top: 53px;
-   left: 210px;
- }
- 
- .ikonmore ul {
-   display: flex;
-   list-style-type: none;
-   flex-direction: column;
-   gap: 80px;
- }
- 
- .ikonmore img {
-   width: 20px;
-   height: 20px;
- }
+}
+.hastag ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.hastag p{
+  font-size: 14px;
+  color: grey;
+}
+.ikonmore{
+  position: absolute;
+  top:53px ;
+  left: 210px;
+
+}
+.ikonmore ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.ikonmore img{
+  width: 20px;
+  height: 20px;
+}
+.more2{
+  position: absolute;
+  background: none;
+  
+  color: #1DA1F2;
+  border: none;
+  top: 90%;
+  font-size: 16px;
+  left: 10px;
+
+}
